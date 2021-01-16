@@ -2,58 +2,89 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 <title>鼎利助手</title>
 <style>
 	*{margin: 0; padding: 0;}
 	a{ text-decoration: none; color: #735645;}
 	img{ width: 100%; display: block;}
 	body{ background-color: #D7D0BD; width:100%; margin:auto;}
-	.top{ width: 100%; background-color: cornflowerblue;}
-	.content{ width: 100%; height: 55%;}
-	.title{ width: 98%; height: 4%; float: left; background-color: #F1EAD7; line-height: 350%; padding-left: 2%; color: #7AA593; font-weight: bold;}
-	.text{ width: 24.6%; height: 3.5%; float: left; background: #F2E4D8; text-align: center; line-height: 350%; border: 1px solid #BFA393; border-left: none; }
-	.bottom{ width: 100%; height: 4%; background: #F2E6D8; text-align: center; line-height: 50px; color: #1D2326; float: left;}
+	.top{ width: 100%; padding-bottom:56.25%; position: relative; overflow: hidden;}
+	.top img{ float: left; width: 10%; height: 100%;}
+	.img { animation: ma 40s infinite; position: absolute; z-index: 9; width: calc(100% * 10);} 
+	@keyframes ma { 
+	0%, 10% { margin-left: 0%; }
+	10%, 20% { margin-left: -100%; }
+	20%, 30% { margin-left: -200%; }
+	30%, 40% { margin-left: -300%; }
+	40%, 50% { margin-left: -400%; }
+	50%, 60% { margin-left: -500%; }
+	60%, 70% { margin-left: -600%; }
+	70%, 80% { margin-left: -700%; }
+	80%, 90% { margin-left: -800%; }
+	90%, 100%{ margin-left: -900%; } 
+	}
+	.content{ width: 100%; height: 550px;}
+	.title{ width: 98%; height: 50px; float: left; background-color: #F1EAD7; line-height: 50px; padding-left: 2%; color: #7AA593; font-weight: bold;}
+	.bottom{ width: 100%; height: 50px; background: #F2E6D8; text-align: center; line-height: 50px; color: #1D2326; float: left;}
+	table{ width: 100%; border: 1px solid #BFA393;}
+	td{ height: 50px; width: 25%; line-height: 50px; border-right: 1px solid #BFA393; background: #F2E4D8;}
+	tr{ height: 50px; width: 100%; line-height: 50px; border: 1px solid #BFA393; text-align: center;}
+	.one{ background-color: #F1EAD7; text-indent: 30px; text-align: left; border-top: 1px solid #BFA393; border-bottom: 1px solid #BFA393; color: #7AA593; font-weight: bold;}
+	.first{ border-left: 1px solid #BFA393;}
 </style>
 </head>
 
 <body>
-	<div class="top"><img src="images/top.jpg" alt=""></div>
-	<div class="content">
-		<div class="box">
-			<div class="title">微窗鼎利</div>
-			<div class="text" style="border-left:1px solid #BFA393;"><a href="https://dlxy.ccswust.edu.cn/">鼎利官网</a></div>
-			<div class="text"><a href="https://www.iesdouyin.com/share/user/690147490014923?u_code=j0ikkd0j&did=1512567715403736&iid=1037578693782942&sec_uid=MS4wLjABAAAAFjYXRLhjSDy32oICNBF0fLTER8vRNKiztRPKYKTIh0M&timestamp=1610072295&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_app_name=douyin">官方抖音</a></div>
-			<div class="text"><a href="https://m.weibo.cn/u/7529908784">官方微博</a></div>
-			<div class="text"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1MDkxMTM2Mw==">校园公众号</a></div>
-			<div class="text" style="border-left:1px solid #BFA393; border-top: none;"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NDQ5OTQ5Mg==">鼎利大小事</a></div>
-		</div>
-		<div class="box">
-			<div class="title">学习服务</div>
-			<div class="text" style="border-left:1px solid #BFA393;"><a href="http://jwgl.ccswust.edu.cn/">教务系统</a></div>
-			<div class="text"><a href="http://m.5read.com/10357">图书资源</a></div>
-		</div>
-		<div class="box">
-			<div class="title">生活服务</div>
-			<div class="text" style="border-left:1px solid #BFA393;"><a href="http://www.axinfu.com/">校园安心付</a></div>
-			<div class="text"><a href="http://www.ujing.com.cn/">U净</a></div>
-			<div class="text"><a href="http://zhuli.whxinna.com/">住理</a></div>
-			<div class="text"><a href="tel:15228732706">送水热线</a></div>
-		</div>
-		<div class="box">
-			<div class="title">查询服务</div>
-			<div class="text" style="border-left:1px solid #BFA393;"><a href="http://jwgl.ccswust.edu.cn/_data/index_lookxl.aspx">校历</a></div>
-			<div class="text"><a href="http://cet.neea.edu.cn/">CET</a></div>
-			<div class="text"><a href="http://ncre.neea.edu.cn/">NCRE</a></div>
-			<div class="text"><a href="http://ntce.neea.edu.cn/">NTCE</a></div>
-		</div>
-		<div class="box">
-			<div class="title">迎新服务</div>
-			<div class="text" style="border-left:1px solid #BFA393;"><a href="https://dlxy.ccswust.edu.cn/about/about5/">学校地址</a></div>
-			<div class="text"><a href="https://msh.ccswust.edu.cn/comb-lqcx/#/home">录取查询</a></div>
-			<div class="text"><a href="http://zs.ccswust.edu.cn/">报考指南</a></div>
+	<div class="top">
+		<div class="img">
+			<img src="images/1.jpg">
+			<img src="images/2.jpg">
+			<img src="images/3.jpg">
+			<img src="images/4.jpg">
+			<img src="images/5.jpg">
+			<img src="images/6.jpg">
+			<img src="images/7.jpg">
+			<img src="images/8.jpg">
+			<img src="images/9.jpg">
+			<img src="images/10.jpg">
 		</div>
 	</div>
+	<table cellspacing="0">
+		<tr><td colspan="4" class="one">鼎利微窗</td></tr>
+		<tr>
+			<td class="first" style="border-bottom: 1px solid #BFA393;"><a href="https://dlxy.ccswust.edu.cn/">鼎利官网</a></td>
+			<td style="border-bottom: 1px solid #BFA393;"><a href="https://www.iesdouyin.com/share/user/690147490014923?u_code=j0ikkd0j&did=1512567715403736&iid=1037578693782942&sec_uid=MS4wLjABAAAAFjYXRLhjSDy32oICNBF0fLTER8vRNKiztRPKYKTIh0M&timestamp=1610072295&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_app_name=douyin">官方抖音</a></td>
+			<td style="border-bottom: 1px solid #BFA393;"><a href="https://m.weibo.cn/u/7529908784">官方微博</a></td>
+			<td style="border-bottom: 1px solid #BFA393;"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU1MDkxMTM2Mw==">校园公众号</a></td>
+		</tr>
+		<tr><td class="first"><a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzg2NDQ5OTQ5Mg==">鼎利大小事</a></td></tr>
+		<tr><td colspan="4" class="one">学习服务</td></tr>
+		<tr>
+			<td class="first"><a href="http://jwgl.ccswust.edu.cn/">教务系统</a></td>
+			<td><a href="http://m.5read.com/10357">图书资源</a></td>
+		</tr>
+		<tr><td colspan="4" class="one">生活服务</td></tr>
+		<tr>
+			<td class="first"><a href="http://www.axinfu.com/">校园安心付</a></td>
+			<td><a href="http://www.ujing.com.cn/">U净</a></td>
+			<td><a href="http://zhuli.whxinna.com/">住理</a></td>
+			<td><a href="tel:15228732706">送水热线</a></td>
+		</tr>
+		<tr><td colspan="4" class="one">查询服务</td></tr>
+		<tr>
+			<td class="first"><a href="http://jwgl.ccswust.edu.cn/_data/index_lookxl.aspx">校历</a></td>
+			<td><a href="http://cet.neea.edu.cn/">CET</a></td>
+			<td><a href="http://ncre.neea.edu.cn/">NCRE</a></td>
+			<td><a href="http://ntce.neea.edu.cn/">NTCE</a></td>
+		</tr>
+		<tr><td colspan="4" class="one">迎新服务</td></tr>
+		<tr>
+			<td class="first"><a href="https://dlxy.ccswust.edu.cn/about/about5/">学校地址</a></td>
+			<td><a href="https://msh.ccswust.edu.cn/comb-lqcx/#/home">录取查询</a></td>
+			<td><a href="http://zs.ccswust.edu.cn/">报考指南</a></td>
+		</tr>
+	</table>
 	<div class="bottom">—— 博学、笃行、严谨、创新 ——</div>
 </body>
 </html>
